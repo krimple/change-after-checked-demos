@@ -7,11 +7,9 @@ import { FormBuilder, FormGroup, FormControl,  } from '@angular/forms';
     <input type="text" [formControl]="fooBar">
 
   </form>
-  {{ theFormGroup?.value | json }}  
-  `,
-  styles: [`h1 { font-family: Lato; }`]
+  `
 })
-export class HelloComponent implements AfterViewInit, OnChanges  {
+export class BrokenComponent implements AfterViewInit, OnChanges  {
   @Input() name: string;
   theFormGroup: FormGroup;
 

@@ -2,8 +2,8 @@ import { OnInit, Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+//  template: '<hello [name]="name"></hello>`
+  template: `<change-detect [name]="name"></change-detect>`
 })
 export class AppComponent  implements OnInit {
   name: string = 'React';
